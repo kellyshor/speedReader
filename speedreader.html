@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8" />
+<title>SpeedReader</title>
+<link href="speedreader.css" type="text/css" rel="stylesheet" />
+<script src="speedreader.js"></script>
+<body>
+  <h1>SpeedReader</h1>
+<div id="blank"></div>
+<div id="controls">
+<fieldset>
+    <label class="labels">Play Controls:</label><br>
+    <input class="controls"  id="start" type="button" value="Start">
+    <input class="controls" id="stop" type="button" value="Stop">
+</fieldset>
+<fieldset>
+  <label class="labels">Speed:</label><br>
+  <select name="speed" id="speed">
+  <option value="500">50 wpm</option>
+  <option value="200">300 wpm</option>
+  <option value="171" selected>350 wpm</option>
+  <option value="150">400 wpm</option>
+  <option value="133">450 wpm</option>
+  <option value="120">500 wpm</option>
+</select>
+</fieldset>
+<fieldset>
+  <label class="labels">Size:</label><br>
+  <form>
+  <input type="radio" id="medium" name="size" value="36pt">
+  <label for="medium">Medium</label>
+  <input type="radio" name="size" value="48pt">
+  <label for="big">Big</label>
+  <input type="radio" name="size" value="60pt">
+  <label for="bigger">Bigger</label>
+</form>
+</fieldset>
+</div>
+<div id="textarea">
+<label class="labels">Input Text</label><br>
+<textarea id="textinput" name="textinput" rows="10" cols="80">
+</textarea>
+</div>
+</body>
+</html>
